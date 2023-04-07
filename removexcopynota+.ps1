@@ -1,0 +1,1 @@
+(Get-Content \\127.0.0.1\netlogon\netstart.bat) | ForEach-Object { $_ -replace "xcopy %PathNotaPlus%", "REM -suppression après maj Nota+ Avril 2023 xcopy %PathNotaPlus%" } | Set-Content \\127.0.0.1\netlogon\netstart.bat
